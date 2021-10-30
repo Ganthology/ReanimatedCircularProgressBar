@@ -41,7 +41,7 @@ const App = () => {
   })
 
   const onPress = useCallback(() => {
-    progress.value = withTiming(progress.value > 0 ? 0 : 1, {duration: 2000});
+    progress.value = withTiming(progress.value > 0 ? 0 : 1, {duration: 25000});
   }, []);
 
   return (
@@ -61,7 +61,7 @@ const App = () => {
           cy={height/2} 
           r={R}
           stroke={STROKE_COLOR}
-          strokeWidth={10}
+          strokeWidth={15}
           strokeDasharray={CIRCLE_LENGTH}
           // strokeDashoffset={CIRCLE_LENGTH * 0.4}
           animatedProps={animatedProps}
